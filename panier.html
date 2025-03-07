@@ -26,6 +26,7 @@
                     'mint-dark': '#c8e0d4',
                     'cream': '#f9f4ea',
                     'forest': '#155724',
+                    'purelife-gray': '#E4EFE7',
                 },
                 fontFamily: {
                     'poppins': ['Poppins', 'sans-serif'],
@@ -41,33 +42,48 @@
   
 
     <!-- Header Section -->
- <header class="w-full bg-primary border-b border-black">
-    <div class="w-full max-w-[1446px] mx-auto flex justify-between items-center px-[5%] py-4 flex-wrap md:flex-nowrap">
-        <img class="w-[180px] h-auto mx-auto md:mx-0" src="images/logo.png" alt="PureLife Logo" />
-        <div class="w-full md:w-[20%] relative mx-auto my-5 md:my-0">
-            <input type="text" placeholder="Rechercher..." class="w-full h-[54px] bg-searchBg rounded-full border border-black py-2 px-10">
-            <img src="images/search.png" alt="Search" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-6 h-6">
-        </div>
-        <div class="flex gap-5 items-center mx-auto md:mx-0">
-            <img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/love.png" alt="Icon 2" />
-            <img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/16-1.png" alt="Icon 3" />
-            <img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/61x47.png" alt="Icon 4" />
-            <img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/57x58.png" alt="Icon 5" />
-        </div>
+    <header class="bg-purelife-gray py-4 px-4 shadow-sm">
+      <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo - avec taille augmentée -->
+          <div class="flex items-center">
+              <a href="#" class="text-purelife-green font-bold text-xl flex items-center">
+                  <img src="./assets/images/Logokenza.png" alt="PURELIFE Logo" class="h-20 w-auto ml-10">
+
+              </a>
+          </div>
+
+          <!-- Search Bar - inchangé -->
+          <div class="relative w-1/3">
+              <input type="text" class="w-full py-2 px-3 border border-gray-300 rounded-full bg-purelife-beige" />
+              <button class="absolute right-3 top-1/2 transform -translate-y-1/2">
+                  <i class="fas fa-search text-gray-500"></i>
+              </button>
+          </div>
+
+          <!-- Icons - avec taille légèrement augmentée -->
+          <div class="flex items-center space-x-6 mr-8">
+          <img src="./assets/images/heart.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+          <a href="./monCompte.html">
+              <img src="./assets/images/profile.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+          </a>
+          <a href="./panier.html">
+              <img src="./assets/images/panier.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+          </a>
+          <img src="./assets/images/translate.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+          </div>
+      </div>
+  </header>
+  <nav class="bg-gray-300 text-gray-800">
+    <div class="container mx-auto">
+        <ul class="flex justify-between px-4 mr-20 ml-20">
+            <li class="py-2"><a href="./TopTendances.html" class="hover:text-purelife-green">Accueil</a></li>
+            <li class="py-2"><a href="./TopTendances.html" class="hover:text-purelife-green">Catégories</a></li>
+            <li class="py-2"><a href="./TopTendances.html" class="hover:text-purelife-green">Nouveautés</a></li>
+            <li class="py-2"><a href="./Apropos.html" class="hover:text-purelife-green">à propos</a></li>
+            <li class="py-2"><a href="./Contacter-nous.html" class="hover:text-purelife-green">Contactez-nous</a></li>
+        </ul>
     </div>
-    <!-- Main Navigation Menu -->
-    <nav class="w-full bg-secondary flex justify-center items-center border-t border-black">
-        <div class="container mx-auto">
-            <ul class="flex justify-between px-4">
-                <li class="py-2"> <a href="Top Tendances.html" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Acceuil</a></li>
-                <li class="py-2"> <a href="#" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Catégories</a></li>                    
-                <li class="py-2"><a href="C:\Users\Yahya Elwafi\Desktop\panier\Top Tendances.html" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Nouveautés</a></li>
-                <li class="py-2"> <a href="#" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">à propos</a></li>
-                <li class="py-2">  <a href="#" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Contactez-nous</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+</nav>
 
   
   <!-- Breadcrumb -->
