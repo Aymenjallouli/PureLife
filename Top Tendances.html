@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Tendances - PureLife</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E4EFE7',
+                        secondary: '#E6ECE3',
+                        accent: '#FAF1E6',
+                        darkGreen: '#064420',
+                        lightGreen: '#3E563E',
+                        formBg: '#EFE9DD',
+                        btnHover: '#444444',
+                        btnDark: '#2C2C2C',
+                        navHover: '#3E563E',
+                        breadcrumbInactive: '#B0BEB4',
+                        searchBg: '#FFF5E0',
+                        'mint': '#e2f0ea',
+                        'mint-dark': '#c8e0d4',
+                        'cream': '#f9f4ea',
+                        'forest': '#155724',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .price-discount {
+            text-decoration: line-through;
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body class="bg-cream ">
+    <!-- Top Navigation Bar -->
+ <!-- Header Section -->
+ <header class="w-full bg-primary border-b border-black">
+    <div class="w-full max-w-[1446px] mx-auto flex justify-between items-center px-[5%] py-4 flex-wrap md:flex-nowrap">
+        <img class="w-[250px] h-auto mx-auto md:mx-0" src="images/logo.png" alt="PureLife Logo" />
+        <div class="w-full md:w-[40%] relative mx-auto my-5 md:my-0">
+            <input type="text" placeholder="Rechercher..." class="w-full h-[54px] bg-searchBg rounded-full border border-black py-2 px-10">
+            <img src="images/search.png" alt="Search" class="absolute right-4 top-1/2 transform -translate-y-1/2 w-6 h-6">
+        </div>
+        <div class="flex gap-5 items-center mx-auto md:mx-0">
+            <img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/love.png" alt="Icon 2" />
+            <img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/16-1.png" alt="Icon 3" />
+           <a href="index.html"><img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/61x47.png" alt="Icon 4" /></a> 
+            <img class="w-10 h-10 hover:scale-110 transition-transform duration-300 cursor-pointer" src="images/57x58.png" alt="Icon 5" />
+        </div>
+    </div>
+    <!-- Main Navigation Menu -->
+    <nav class="w-full bg-secondary flex justify-center items-center border-t border-black">
+        <div class="container mx-auto">
+            <ul class="flex justify-between px-4">
+                <li class="py-2"> <a href="Top Tendances.html" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Acceuil</a></li>
+                <li class="py-2"> <a href="#" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Catégories</a></li>                    <li class="py-2"><a href="#" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Nouveautés</a></li>
+                <li class="py-2"> <a href="#" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">à propos</a></li>
+                <li class="py-2">  <a href="#" class="text-black text-base md:text-xl font-semibold hover:text-lightGreen hover:underline px-4 md:px-8 py-4">Contactez-nous</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    
+    <!-- Breadcrumb -->
+    <div class="container mx-auto py-2 px-4">
+        <div class="text-sm">
+            <a href="#" class="text-forest hover:underline">Acceuil</a>
+            <span class="mx-1">›</span>
+            <span class="font-medium">Top tendances</span>
+        </div>
+    </div>
+    
+    <main class="container mx-auto p-6 m-10">
+        <h1 class="text-forest text-3xl font-bold text-center mb-8">TOP TENDANCES</h1>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Left Sidebar - Categories -->
+            <aside class="lg:col-span-1">
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-gray-200 p-4 flex items-center">
+                        <svg class="h-6 w-6 mr-2 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                        <span class="font-semibold text-gray-700">Catégories</span>
+                    </div>
+                    <nav aria-label="Navigation des catégories">
+                        <ul class="divide-y divide-gray-300">
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Nouveautés</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Visage</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Corps</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Hygiène</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Cheveux</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Bien-être</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Fitness</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Promotions</a></li>
+                            <li><a href="#" class="block p-4 hover:bg-gray-200 transition">Marques</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            
+            <!-- Middle Content - Promotions & Products -->
+            <section class="lg:col-span-2 space-y-8">
+                <!-- Promotional Banner -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./images/first.webp" alt="Promotion exceptionnelle" class="w-full h-auto" loading="lazy" />
+                </div>
+                
+                <!-- Featured Products -->
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h2 class="text-xl font-semibold mb-4">Chers clients</h2>
+                    <p class="text-gray-600 mb-6">Découvrez nos gammes de produits ici</p>
+                    
+                    <div class="grid grid-cols-3 gap-6">
+                        <!-- Product Item -->
+                        <div class="relative group">
+                            <img src="./images/1.webp" alt="Produit en promotion" class="w-full rounded-lg object-cover" loading="lazy" />
+                            <div class="absolute bottom-3 left-3 bg-red-500 text-white text-sm py-1 px-3 rounded mb-2">146.001 DT</div>
+                            <div class="text-sm text-gray-500 line-through mt-4 ml-16">157.800 DT</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                                <button class="bg-forest text-white p-3 rounded-full" aria-label="Ajouter au panier">
+                                    <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Repeat for more products -->
+                        <div class="relative group">
+                            <img 
+                                src="./images/2.webp" 
+                                alt="Produit en promotion" 
+                                class="w-full rounded-lg object-cover"
+                                loading="lazy"
+                            />
+                            <div class="absolute bottom-2 left-2 bg-red-500 text-white text-xs py-1 px-2 rounded mb-2">
+                                39.900 DT
+                            </div>
+                            <div class="text-xs text-gray-500 line-through mt-4 ml-16">43.300 DT</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-forest text-white p-2 rounded-full" aria-label="Ajouter au panier">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <img 
+                                src="./images/8.webp" 
+                                alt="Produit en promotion" 
+                                class="w-full rounded-lg object-cover"
+                                loading="lazy"
+                            />
+                            <div class="absolute bottom-2 left-2 bg-red-500 text-white text-xs py-1 px-2 rounded mb-2">
+                                42.000 DT
+                            </div>
+                            <div class="text-xs text-gray-500 line-through mt-4 ml-16">45.500 DT</div>
+                            <div class="absolute inset-0 bg-black bg-opacity-20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <button class="bg-forest text-white p-2 rounded-full" aria-label="Ajouter au panier">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Right Sidebar - User Account -->
+            <aside class="lg:col-span-1">
+                <div class="bg-white rounded-lg p-6 shadow-md flex flex-col items-center">
+                    <svg class="h-16 w-16 text-gray-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                    </svg>
+                    <h2 class="text-lg font-bold text-center mb-4">Bienvenue sur PureLife</h2>
+                    <div class="flex flex-col sm:flex-row gap-3 w-full">
+                        <a href="#" class="bg-forest text-white px-4 py-2 rounded text-center hover:bg-green-700 transition">S'authentifier</a>
+                        <a href="#" class="bg-forest text-white px-4 py-2 rounded text-center hover:bg-green-700 transition">S'enregistrer</a>
+                    </div>
+                </div>
+                 <!-- Product Advertisement -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+            <img 
+                src="./images/stri.webp" 
+                alt="STRI Olive Crème Dépilatoire - Promotion spéciale" 
+                class="w-full h-auto"
+                loading="lazy"
+            />
+        </div>
+            </aside>
+        </div>
+       
+        <!-- Nouveautés Section -->
+        <section class="mt-8 pb-10 bg-gray-200">
+            <h2 class="text-forest text-2xl font-bold text-center mb-6">nouveautés</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <!-- Product 1 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="./images/oligovit-zinc-25mg-15-gelules.png" alt="ACM Azéane Crème" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ACM AZEANE CRÈME</div>
+                        <div class="text-red-500 font-bold">80.00 DT</div>
+                        <div class="price-discount">85.500 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="./images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Sensilis Sensitive SPF" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">SENSILIS SENSITIVE</div>
+                        <div class="text-red-500 font-bold">47.000 DT</div>
+                        <div class="price-discount">59.500 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/CYNVJUwhTsiJoobSYfyT.png" alt="Avene Cleanance" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">AVENE CLEANANCE</div>
+                        <div class="text-red-500 font-bold">70.001 DT</div>
+                        <div class="price-discount">81.900 DT</div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/stri.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Tigra+ Men" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">TIGRA+ MEN</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+                  <!-- Product 1 -->
+                  <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="./images/oligovit-zinc-25mg-15-gelules.png" alt="ACM Azéane Crème" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ACM AZEANE CRÈME</div>
+                        <div class="text-red-500 font-bold">80.00 DT</div>
+                        <div class="price-discount">85.500 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="./images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Sensilis Sensitive SPF" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">SENSILIS SENSITIVE</div>
+                        <div class="text-red-500 font-bold">47.000 DT</div>
+                        <div class="price-discount">59.500 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/CYNVJUwhTsiJoobSYfyT.png" alt="Avene Cleanance" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">AVENE CLEANANCE</div>
+                        <div class="text-red-500 font-bold">70.001 DT</div>
+                        <div class="price-discount">81.900 DT</div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/stri.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Tigra+ Men" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">TIGRA+ MEN</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Fitness Section -->
+        <section class="mt-8 mb-8 pb-10">
+            <h2 class="text-forest text-2xl font-bold text-center mb-6">fitness</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <!-- Fitness Product 1 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/1.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 2 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/2.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 3 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/3.webp" alt="Pin Up Secret" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">PIN UP SECRET TEINT</div>
+                        <div class="text-red-500 font-bold">85.000 DT</div>
+                        <div class="price-discount">84.500 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 4 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/4.jpg" alt="Eucerin Aquaphor" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">EUCERIN AQUAPHOR</div>
+                        <div class="text-red-500 font-bold">32.750 DT</div>
+                        <div class="price-discount">46.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 5 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/5.jpg" alt="Ducray Gel Rubéfiant" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">DUCRAY GEL RUBÉFIANT</div>
+                        <div class="text-red-500 font-bold">32.000 DT</div>
+                        <div class="price-discount">35.800 DT</div>
+                    </div>
+                </div>
+                <!-- Fitness Product 1 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/1.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 2 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/2.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                        <div class="text-red-500 font-bold">25.200 DT</div>
+                        <div class="price-discount">25.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 3 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/3.webp" alt="Pin Up Secret" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">PIN UP SECRET TEINT</div>
+                        <div class="text-red-500 font-bold">85.000 DT</div>
+                        <div class="price-discount">84.500 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 4 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/4.jpg" alt="Eucerin Aquaphor" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">EUCERIN AQUAPHOR</div>
+                        <div class="text-red-500 font-bold">32.750 DT</div>
+                        <div class="price-discount">46.200 DT</div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Product 5 -->
+                <div class="bg-white p-2 rounded shadow-sm relative group">
+                    <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                        <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="relative h-40 mb-2 overflow-hidden">
+                        <img src="images/5.jpg" alt="Ducray Gel Rubéfiant" class="w-full h-full object-contain">
+                        <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="bg-forest text-white p-2 rounded-full">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-xs font-medium">DUCRAY GEL RUBÉFIANT</div>
+                        <div class="text-red-500 font-bold">32.000 DT</div>
+                        <div class="price-discount">35.800 DT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- bien-étre Section -->
+                <section class="mt-8 mb-8 pb-10 bg-gray-200">
+                    <h2 class="text-forest text-2xl font-bold text-center mb-6">bien-étre</h2>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        <!-- Product 1 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="./images/oligovit-zinc-25mg-15-gelules.png" alt="ACM Azéane Crème" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">ACM AZEANE CRÈME</div>
+                                <div class="text-red-500 font-bold">80.00 DT</div>
+                                <div class="price-discount">85.500 DT</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="./images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Sensilis Sensitive SPF" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">SENSILIS SENSITIVE</div>
+                                <div class="text-red-500 font-bold">47.000 DT</div>
+                                <div class="price-discount">59.500 DT</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="images/CYNVJUwhTsiJoobSYfyT.png" alt="Avene Cleanance" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">AVENE CLEANANCE</div>
+                                <div class="text-red-500 font-bold">70.001 DT</div>
+                                <div class="price-discount">81.900 DT</div>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="images/stri.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                                <div class="text-red-500 font-bold">25.200 DT</div>
+                                <div class="price-discount">25.200 DT</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 5 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Tigra+ Men" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">TIGRA+ MEN</div>
+                                <div class="text-red-500 font-bold">25.200 DT</div>
+                                <div class="price-discount">25.200 DT</div>
+                            </div>
+                        </div>
+                          <!-- Product 1 -->
+                          <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="./images/oligovit-zinc-25mg-15-gelules.png" alt="ACM Azéane Crème" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">ACM AZEANE CRÈME</div>
+                                <div class="text-red-500 font-bold">80.00 DT</div>
+                                <div class="price-discount">85.500 DT</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="./images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Sensilis Sensitive SPF" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">SENSILIS SENSITIVE</div>
+                                <div class="text-red-500 font-bold">47.000 DT</div>
+                                <div class="price-discount">59.500 DT</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="images/CYNVJUwhTsiJoobSYfyT.png" alt="Avene Cleanance" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">AVENE CLEANANCE</div>
+                                <div class="text-red-500 font-bold">70.001 DT</div>
+                                <div class="price-discount">81.900 DT</div>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="images/stri.webp" alt="Aspinerv 30 Gélules" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">ASPINERV 30 GÉLULES</div>
+                                <div class="text-red-500 font-bold">25.200 DT</div>
+                                <div class="price-discount">25.200 DT</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 5 -->
+                        <div class="bg-white p-2 rounded shadow-sm relative group">
+                            <div class="bg-mint-dark absolute top-2 left-2 rounded-full h-8 w-8 flex items-center justify-center">
+                                <svg class="h-4 w-4 text-forest" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="relative h-40 mb-2 overflow-hidden">
+                                <img src="images/bio-orient-huile-de-noix-de-coco-90ml.png" alt="Tigra+ Men" class="w-full h-full object-contain">
+                                <div class="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="bg-forest text-white p-2 rounded-full">
+                                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-xs font-medium">TIGRA+ MEN</div>
+                                <div class="text-red-500 font-bold">25.200 DT</div>
+                                <div class="price-discount">25.200 DT</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </main>
+    
+           <!-- Newsletter Section -->
+        <section class="w-full bg-darkGreen py-5 px-[5%] flex flex-wrap items-center justify-between">
+            <div class="flex items-center w-full md:w-auto mx-auto md:mx-0 justify-center mb-5 md:mb-0">
+                <img src="images/Vector.png" alt="Newsletter Icon" class="w-10 h-auto mr-4">
+                <div class="text-white">
+                    <h3 class="text-xl font-bold">Inscrivez-vous à la newsletter</h3>
+                    <p class="text-base mt-1">...on vous apporte les dernières nouvelles !</p>
+                </div>
+            </div>
+            <form class="flex gap-2.5 w-full md:w-auto mx-auto md:mx-0 justify-center md:justify-start flex-wrap md:flex-nowrap">
+                <input type="email" class="py-3 px-4 rounded-lg border-none min-w-[250px] w-full md:w-auto max-w-[300px]" placeholder="you@example.com" required>
+                <button type="submit" class="py-3 px-6 bg-white text-darkGreen font-semibold border-none rounded-lg cursor-pointer hover:bg-gray-100 transition-colors duration-300 w-full md:w-auto max-w-[300px] mt-4 md:mt-0">Submit</button>
+            </form>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="w-full bg-primary py-10 relative">
+            <div class="flex justify-center gap-4 my-8">
+                <img class="w-10 h-10" src="images/facebook.png" alt="Social 1" />
+                <img class="w-10 h-10" src="images/yt.png" alt="Social 2" />
+                <img class="w-10 h-10" src="images/twitter.png" alt="Social 3" />
+                <img class="w-10 h-10" src="images/pinterest.png" alt="Social 4" />
+                <img class="w-10 h-10" src="images/inst.png" alt="Social 5" />
+            </div>
+            <div class="w-[80%] max-w-[1111px] mx-auto bg-white rounded-3xl p-8 flex justify-around flex-wrap">
+                
+                <div class="flex flex-col items-center m-5 text-center">
+                    <img class="w-[60px] h-[60px] mb-4" src="images/karhba.png" alt="Delivery Icon" />
+                    <p class="text-sm font-inter font-medium max-w-[200px]">Livraison en 24h (**) Hors confinement</p>
+                </div>
+                <div class="flex flex-col items-center m-5 text-center">
+                    <img class="w-[60px] h-[60px] mb-4" src="images/open.png" alt="Hours Icon" />
+                    <p class="text-sm font-inter font-medium max-w-[200px]">Ouvert tous les jours de 8h00 à 19h00</p>
+                </div>
+                <div class="flex flex-col items-center m-5 text-center">
+                    <img class="w-[60px] h-[60px] mb-4" src="images/tel.png" alt="Contact Icon" />
+                    <p class="text-sm font-inter font-medium max-w-[200px]">Contactez-nous au +216 58 31 20 00</p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="w-full border-t border-white my-5"></div>
+            <div class="text-center text-black text-xl font-semibold py-2.5">© 2025 - PureLife™</div>
+        </footer>
+    
