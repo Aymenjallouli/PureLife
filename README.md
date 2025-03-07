@@ -9,7 +9,8 @@ PureLife est une application web qui permet aux utilisateurs de suivre et de gé
 - Interface de **livraison** : Permet à l'utilisateur de spécifier son adresse de départ, la destination, et d'ajouter un numéro de téléphone pour la livraison.
 - Interface de **paiement** : Gère la sélection et l'intégration de méthodes de paiement, ainsi que la confirmation de commande.
 - **Responsive Design** : L'application s'adapte à différents types de dispositifs (mobile, tablette, bureau).
-  
+**Top Tendances Interface**: Displays trending products, categories, and promotions.
+**Panier Interface** A shopping cart interface where users can manage their selected products and proceed to checkout.
 
 # PureLife - Site Web Bio
 
@@ -60,15 +61,19 @@ Ce projet a été développé en suivant strictement la maquette Figma fournie, 
 
 ## 🌐 Structure du Projet
 
-```
-/
-├── Categorie.html
-├── Apropos.html
-├── Contacter-nous.html
-├── README.md
-└── images/
-    └── [tous les fichiers d'images]
-```
+purelife-ecommerce/
+├── images/                  # Images used in the project
+├── css/                     # Custom CSS files (if any)
+├── js/                      # JavaScript files for interactivity
+├── Top-Tendances.html       # Top Tendances Interface
+├── Panier.html              # Panier Interface
+├── Livraison-Paiement.html  # Delivery and Payment Interface
+├── Accueil.html             # Site Web Bio - Homepage
+├── Categorie.html           # Site Web Bio - Categories Page
+├── Apropos.html             # Site Web Bio - About Page
+├── Contacter-nous.html      # Site Web Bio - Contact Page
+├── README.md                # Project documentation
+└── tailwind.config.js       # Tailwind CSS configuration
 
 ## 📱 Compatibilité
 
@@ -87,3 +92,4 @@ Ce projet a été développé en suivant strictement la maquette Figma fournie, 
 
 
 >>>>>>> origin/Yasyne/login-signup
+>>>>>>> origin/Yahya/ Interface Top Tendances et Panier
