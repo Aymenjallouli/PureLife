@@ -1,5 +1,11 @@
 
-# PureLife - Interface Livraison et Paiement
+# PureLife 
+Team Member	Responsibilities
+Yahya Wafi	Frontend Development (Top Tendances Interface ,Panier Interface)
+Aymen Jallouli 	
+Yasyne Manai	
+Wael Marouanii	
+Kenza Ben Slimane 
 
 ## Description
 
@@ -92,4 +98,5 @@ purelife-ecommerce/
 
 
 >>>>>>> origin/Yasyne/login-signup
+
 >>>>>>> origin/Yahya/ Interface Top Tendances et Panier
