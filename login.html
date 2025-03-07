@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureLife - login</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purelife-green': '#2A6A39',
+                        'purelife-light-green': '#3E9653',
+                        'purelife-beige': '#F9F3E9',
+                        'purelife-gray': '#E4EFE7',
+                        "lightGreen": '#198754',
+                        "darkGreen": '#0F5132',
+                        "button": '#2d6a4f'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-purelife-beige min-h-screen flex flex-col">
+    <!-- Top Navigation Bar -->
+    <header class="bg-purelife-gray py-6 px-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -  -->
+            <div class="flex items-center">
+                <a href="#" class="text-purelife-green font-bold text-2xl flex items-center">
+                    <img src="assets/images/Logo.png" alt="PURELIFE Logo" class="h-12">
+                </a>
+            </div>
+
+            <!-- Search Bar -  -->
+            <div class="relative w-1/3">
+                <input type="text"
+                    class="w-full py-3 px-4 border border-gray-300 rounded-full bg-purelife-beige text-base" />
+                <button class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                    <img src="./assets/images/search.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+                </button>
+            </div>
+
+            <!-- Icons -  -->
+            <div class="flex items-center space-x-6">
+                <img src="./assets/images/heart.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+            <img src="./assets/images/profile.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+            <img src="./assets/images/panier.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+            <img src="./assets/images/translate.png" alt="PureLife Logo" class="w-10 hover:scale-110 transform transition-all duration-300">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation Menu -->
+    <nav class="bg-black bg-opacity-20 text-gray-800">
+        <div class="container mx-auto">
+            <ul class="flex justify-between px-4">
+                <li class="py-2"><a href="#" class="hover:text-purelife-green">Accueil</a></li>
+                <li class="py-2"><a href="#" class="hover:text-purelife-green">Catégories</a></li>
+                <li class="py-2"><a href="#" class="hover:text-purelife-green">Nouveautés</a></li>
+                <li class="py-2"><a href="#" class="hover:text-purelife-green">à propos</a></li>
+                <li class="py-2"><a href="#" class="hover:text-purelife-green">Contactez-nous</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+    <div class="container mx-auto px-4 py-2 text-sm text-gray-600">
+        <p>Accueil &gt; Connectez-vous à votre compte</p>
+    </div>
+  
+    
+
+    <main class="  max-w-lg mx-auto mt-6  ">
+        <h2 class="text-2xl font-bold text-center mt-2">Connectez-vous à votre compte</h2>
+        <p class="text-center text-lg font-semibold mt-2">J’ai déjà un compte</p>
+        <p class="text-center mt-4">Connectez-vous pour accéder à votre compte, retrouver vos commandes et vos informations personnelles</p>
+        <form class="mt-6">
+            <label class="block">Email *</label>
+            <input type="email" class="w-full p-2 border rounded mt-1" placeholder="Votre email">
+            
+            <label class="block mt-4">Mot de passe *</label>
+            <input type="password" class="w-full p-2 border rounded mt-1" placeholder="Votre mot de passe">
+            
+            <div class="flex justify-between items-center mt-4">
+                <button class="bg-button text-white px-4 py-2 rounded">Connexion</button>
+                <img src="assets/images/google.png" alt="Lock Icon" class="w-6 h-6">
+                <a href="#" class="text-blue-600">Mot de passe oublié ?</a>
+            </div>
+            <a href="signup.html" class="w-full mt-4 bg-button p-2 text-white rounded flex items-center justify-center text-center">
+                Pas de compte ? Créez-en un
+            </a>
+            
+            
+        </form>
+    </main>
+    
+
+    </main>
+
+    <!-- Newsletter Section -->
+    <div class="bg-purelife-green text-white py-3 mt-4">
+        <div class="container mx-auto px-4 flex flex-wrap items-center justify-between">
+            <div class="flex items-center mb-2 md:mb-0">
+                <i class="far fa-envelope text-xl mr-2"></i>
+                <span>Inscrivez-vous à la newsletter</span>
+                <span class="ml-4 text-sm">...on vous apporte les dernières nouvelles !</span>
+            </div>
+            <div class="flex">
+                <input type="email" placeholder="votre@email.com" class="px-3 py-1 rounded-l">
+                <button class="bg-gray-200 text-gray-800 px-3 py-1 rounded-r">S'inscrire</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer Info Section -->
+
+    <footer class="bg-purelife-gray py-4 px-4 shadow-sm">
+        <div class="flex justify-center gap-4 my-8">
+            <img class="w-10 h-10" src="assets/images/facebook.png" alt="Social 1" />
+            <img class="w-10 h-10" src="assets/images/yt.png" alt="Social 2" />
+            <img class="w-10 h-10" src="assets/images/twitter.png" alt="Social 3" />
+            <img class="w-10 h-10" src="assets/images/pinterest.png" alt="Social 4" />
+            <img class="w-10 h-10" src="assets/images/inst.png" alt="Social 5" />
+        </div>
+        <div class="w-[80%] max-w-[1111px] mx-auto bg-white rounded-3xl p-8 flex justify-around flex-wrap">
+            <div class="flex flex-col items-center m-5 text-center">
+                <img class="w-[60px] h-[60px] mb-4" src="assets/images/karhba.png" alt="Delivery Icon" />
+                <p class="text-sm font-inter font-medium max-w-[200px]">Livraison en 24h (**) Hors confinement</p>
+            </div>
+            <div class="flex flex-col items-center m-5 text-center">
+                <img class="w-[60px] h-[60px] mb-4" src="assets/images/open.png" alt="Hours Icon" />
+                <p class="text-sm font-inter font-medium max-w-[200px]">Ouvert tous les jours de 8h00 à 19h00</p>
+            </div>
+            <div class="flex flex-col items-center m-5 text-center">
+                <img class="w-[60px] h-[60px] mb-4" src="assets/images/tel.png" alt="Contact Icon" />
+                <p class="text-sm font-inter font-medium max-w-[200px]">Contactez-nous au +216 58 31 20 00</p>
+            </div>
+        </div>
+
+
+
+        <div class="w-full border-t border-white my-5"></div>
+        <div class="text-center text-black text-xl font-semibold py-2.5">© 2025 - PureLife™</div>
+    </footer>
+</body>
+
+</html>

@@ -11,10 +11,6 @@ PureLife est une application web qui permet aux utilisateurs de suivre et de gé
 - **Responsive Design** : L'application s'adapte à différents types de dispositifs (mobile, tablette, bureau).
   
 
-  
-
-
-=======
 # PureLife - Site Web Bio
 
 Ce projet est une intégration web responsive d'une maquette Figma pour un site web de produits bio nommé PureLife.
@@ -80,3 +76,14 @@ Ce projet a été développé en suivant strictement la maquette Figma fournie, 
 - ✅ Tablette (à partir de 768px)
 - ✅ Desktop (à partir de 1024px)
 >>>>>>> origin/Wael/AproposContacter-nous
+=======
+## Technologies utilisées
+
+- **HTML** : Structure du contenu de la page.
+- **CSS (via Tailwind CSS)** : Design et mise en page réactive.
+- **JavaScript** : Interactivité et fonctionnalités dynamiques.
+- **Font Awesome** : Icônes pour une meilleure interface utilisateur.
+  
+
+
+>>>>>>> origin/Yasyne/login-signup
