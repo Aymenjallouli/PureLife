@@ -92,14 +92,36 @@
 
                 <!-- Section Avatar et téléchargement -->
                 <div class="flex flex-col items-center mb-8">
+                    <div class="mt-4 w-[160px] h-[180px] border-2 border-gray-300 rounded-[10px] overflow-hidden">
+                        <!-- Image par défaut -->
+                        <img id="local-image" src="./images/testt.png" alt="Image du local"
+                            class="w-full h-full object-cover">
+                    </div>
 
-                    <img src="./images/testt.png" alt="Avatar"
-                        class="w-[150px] h-[170px] rounded-[5px] mb-2 ">
-                    <button class="border border-gray-400 text-[#2D6A4F] px-4 py-2 rounded-full bg-white">
+                    <!-- Bouton pour télécharger une nouvelle image -->
+                    <input type="file" id="photo-local" accept="image/*" class="hidden" onchange="previewImage(event)">
+                    <button class="border border-gray-400 text-[#2D6A4F] px-4 py-2 rounded-full bg-white mt-4"
+                        onclick="document.getElementById('photo-local').click();">
                         Télécharger Photo
                     </button>
-
                 </div>
+
+                <script>
+                    function previewImage(event) {
+                        const reader = new FileReader();
+                        const file = event.target.files[0];
+
+                        if (file) {
+                            reader.onload = function () {
+                                // Mettre à jour l'image affichée avec la source du fichier téléchargé
+                                const localImage = document.getElementById('local-image');
+                                localImage.src = reader.result;
+                            }
+                            reader.readAsDataURL(file);
+                        }
+                    }
+                </script>
+
 
                 <!-- Formulaire d'information -->
                 <div class="space-y-6">
