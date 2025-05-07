@@ -52,7 +52,7 @@ PureLife est un site web dédié à la vente de produits biologiques. Le design 
 
 1. Clonez le dépôt:
 ```bash
-git clone https://github.com/marwaniiwael18/Ux-project.git
+git clone https://github.com/Aymenjallouli/PureLife.git
 ```
 
 2. Ouvrez n'importe quel fichier HTML dans votre navigateur ou utilisez un serveur local pour afficher le site.
