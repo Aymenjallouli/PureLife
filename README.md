@@ -1,4 +1,3 @@
-
 # PureLife 
 Team Member	Responsibilities
 Yahya Wafi	Frontend Development (Top Tendances Interface ,Panier Interface)
@@ -57,6 +56,17 @@ git clone https://github.com/Aymenjallouli/PureLife.git
 
 2. Ouvrez n'importe quel fichier HTML dans votre navigateur ou utilisez un serveur local pour afficher le site.
 
+## 🌐 Déploiement
+
+Ce projet est déployé sur Vercel. Accédez au site en direct à l'adresse: [PureLife](https://purelife.vercel.app)
+
+Pour déployer votre propre instance:
+
+1. Créez un compte sur [Vercel](https://vercel.com)
+2. Connectez votre dépôt GitHub
+3. Sélectionnez le dépôt et déployez
+4. Assurez-vous que le répertoire racine contient un fichier `index.html`
+
 ## 📐 Respect de la Maquette
 
 Ce projet a été développé en suivant strictement la maquette Figma fournie, en respectant:
@@ -88,6 +98,7 @@ purelife-ecommerce/
 - ✅ Desktop (à partir de 1024px)
 >>>>>>> origin/Wael/AproposContacter-nous
 =======
+
 ## Technologies utilisées
 
 - **HTML** : Structure du contenu de la page.
@@ -95,8 +106,6 @@ purelife-ecommerce/
 - **JavaScript** : Interactivité et fonctionnalités dynamiques.
 - **Font Awesome** : Icônes pour une meilleure interface utilisateur.
   
-
-
 >>>>>>> origin/Yasyne/login-signup
 
 >>>>>>> origin/Yahya/ Interface Top Tendances et Panier
