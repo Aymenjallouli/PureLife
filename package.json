@@ -1,25 +1,27 @@
 {
-  "name": "panier",
+  "name": "purelife",
   "version": "1.0.0",
-  "description": "",
+  "description": "PureLife E-commerce Website",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yahya-Espada/Projet-PureLife.git"
+    "url": "git+https://github.com/Aymenjallouli/PureLife.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yahya-Espada/Projet-PureLife/issues"
+    "url": "https://github.com/Aymenjallouli/PureLife/issues"
   },
-  "homepage": "https://github.com/Yahya-Espada/Projet-PureLife#readme",
+  "homepage": "https://github.com/Aymenjallouli/PureLife#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.11"
+    "tailwindcss": "^4.0.11",
+    "serve": "^14.0.0"
   }
 }
